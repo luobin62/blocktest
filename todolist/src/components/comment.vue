@@ -54,9 +54,9 @@ export default {
   methods: {
     bntChange() {
       this.isChange = !this.isChange
-    },
-    backPge() {
-      console.log(111)
+      if(this.textarea) {
+        this.isOk = !this.isOk
+      }
     },
     addEvent() {
       console.log(33)
